@@ -11,3 +11,5 @@ select
 from {{ ref("stg_gz_raw_data__raw_gz_sales") }} s
 left join {{ ref("stg_gz_raw_data__raw_gz_product") }} p 
      using (products_id)
+
+
